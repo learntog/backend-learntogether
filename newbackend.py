@@ -107,7 +107,7 @@ def fileReader(firebase, file, user):
         dictionary = {'location': unitOut[i][3], 'time': unitOut[i][2], 'unitID': unitOut[i][0], 'group':unitOut[i][1],'users':oldUsers[i]}
         firebase.put("","classes/"+str(unit[i]),dictionary)
 
-        firebase.put('/', 'requests/' + str(user[0]) + "/status", 'SUCCESS')
+    firebase.put('/', 'requests/' + str(user[0]) + "/status", 'SUCCESS')
     #End of function
 
 
